@@ -126,9 +126,6 @@
 // Напишите программу, которая будет находить строку с 
 // наименьшей суммой элементов.
 
-
-using System.ComponentModel;
-
 int[,] array = new int[3,3];
 
 void createArray()
