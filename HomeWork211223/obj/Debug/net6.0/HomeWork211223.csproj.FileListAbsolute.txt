@@ -1,0 +1,15 @@
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\obj\Debug\net6.0\HomeWork211223.csproj.AssemblyReference.cache
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\obj\Debug\net6.0\HomeWork211223.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\obj\Debug\net6.0\HomeWork211223.AssemblyInfoInputs.cache
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\obj\Debug\net6.0\HomeWork211223.AssemblyInfo.cs
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\obj\Debug\net6.0\HomeWork211223.csproj.CoreCompileInputs.cache
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\bin\Debug\net6.0\HomeWork211223.exe
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\bin\Debug\net6.0\HomeWork211223.deps.json
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\bin\Debug\net6.0\HomeWork211223.runtimeconfig.json
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\bin\Debug\net6.0\HomeWork211223.dll
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\bin\Debug\net6.0\HomeWork211223.pdb
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\obj\Debug\net6.0\HomeWork211223.dll
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\obj\Debug\net6.0\refint\HomeWork211223.dll
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\obj\Debug\net6.0\HomeWork211223.pdb
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\obj\Debug\net6.0\HomeWork211223.genruntimeconfig.cache
+C:\Users\ALFA\Desktop\Задания\HomeWork\HomeWork211223\obj\Debug\net6.0\ref\HomeWork211223.dll
