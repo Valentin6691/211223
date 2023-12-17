@@ -127,7 +127,6 @@
 // наименьшей суммой элементов.
 
 int[,] array = new int[3,3];
-
 void createArray()
 {
 for(int i = 0; i<array.GetLength(0); i++)
