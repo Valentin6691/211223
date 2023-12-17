@@ -126,6 +126,62 @@
 // Напишите программу, которая будет находить строку с 
 // наименьшей суммой элементов.
 
+// int[,] array = new int[3,3];
+// void createArray()
+// {
+// for(int i = 0; i<array.GetLength(0); i++)
+//     {
+//     for(int j = 0; j<array.GetLength(1); j++)
+//         {
+//             array[i,j] = new Random().Next(1,10);
+//         }     
+//     }
+// }
+// void printArray()
+// {
+// for(int i = 0; i<array.GetLength(0); i++)
+//     {
+//     for(int j = 0; j<array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i,j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+//     Console.WriteLine();
+// }
+// void minSumRowArray()
+// {
+//     int minSum = int.MaxValue;
+//     int minSumRowIndex = -1;
+//     for(int i = 0; i<array.GetLength(0); i++)
+//     {
+//         int rowSum = 0;
+//     for(int j = 0; j<array.GetLength(1); j++)
+//         {
+//             rowSum = rowSum + array[i,j];
+//         } 
+//             if(rowSum < minSum)
+//                 {
+//                     minSum = rowSum;
+//                     minSumRowIndex = i;
+//                 }  
+//     }
+//         Console.WriteLine(minSum); 
+//         Console.WriteLine($"Строка с индексом {minSumRowIndex} с суммой: {minSum}");
+// }
+// createArray();
+// printArray();
+// minSumRowArray();
+
+// Задача 4*(не обязательная): Задайте двумерный массив 
+// из целых чисел. Напишите программу, которая удалит 
+// строку и столбец, на пересечении которых расположен 
+// наименьший элемент массива. Под удалением 
+// понимается создание нового двумерного массива без 
+// строки и столбца
+
+using System.Globalization;
+
 int[,] array = new int[3,3];
 void createArray()
 {
@@ -149,27 +205,35 @@ for(int i = 0; i<array.GetLength(0); i++)
     }
     Console.WriteLine();
 }
-Random rnd = new Random();
-void minSumRowArray()
+void delRowdelCol()
 {
-    int minSum = int.MaxValue;
-    int minSumRowIndex = -1;
+    int minElem = int.MaxValue;
+    int minElemIndexRow = -1;
+    int minElemIndexCol = -1;
     for(int i = 0; i<array.GetLength(0); i++)
     {
-        int rowSum = 0;
     for(int j = 0; j<array.GetLength(1); j++)
         {
-            rowSum = rowSum + array[i,j];
-        } 
-            if(rowSum < minSum)
+            if(array[i,j] < minElem)
                 {
-                    minSum = rowSum;
-                    minSumRowIndex = i;
+                    minElem = array[i,j];
+                    minElemIndexRow = i;
+                    minElemIndexCol = j;
                 }  
+        } 
     }
-        Console.WriteLine(minSum); 
-        Console.WriteLine($"Строка с индексом {minSumRowIndex} с суммой: {minSum}");
+        Console.WriteLine(minElem); 
+        Console.WriteLine("Индекс минимального элемента " + minElemIndexRow +", " + minElemIndexCol);
+int[,] delRowdelCol(int[,] array, int minElemIndexRow, int minElemIndexCol)
+{
+    throw new NotImplementedException();
+}
+
+    int[,] array1;
+    int[,] _ = delRowdelCol(array, minElemIndexRow, minElemIndexCol);
+
+        
 }
 createArray();
 printArray();
-minSumRowArray();
+delRowdelCol();
