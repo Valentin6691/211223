@@ -38,7 +38,7 @@ void testing()
 }
 else
 {
-    Console.Write("Данные введены некорректно");
+    Console.Write("Такого элемента не существует");
 }
 }
 void searchPosition()
