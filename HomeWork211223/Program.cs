@@ -180,7 +180,68 @@
 // понимается создание нового двумерного массива без 
 // строки и столбца
 
-using System.Globalization;
+// int[,] array = new int[3,3];
+// void createArray()
+// {
+// for(int i = 0; i<array.GetLength(0); i++)
+//     {
+//     for(int j = 0; j<array.GetLength(1); j++)
+//         {
+//             array[i,j] = new Random().Next(1,10);
+//         }     
+//     }
+// }
+// void printArray()
+// {
+// for(int i = 0; i<array.GetLength(0); i++)
+//     {
+//     for(int j = 0; j<array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i,j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+//     Console.WriteLine();
+// }
+// void indexMinElem()
+// {
+//     int minElem = int.MaxValue;
+//     int minElemIndexRow = -1;
+//     int minElemIndexCol = -1;
+//     for(int i = 0; i<array.GetLength(0); i++)
+//     {
+//     for(int j = 0; j<array.GetLength(1); j++)
+//         {
+//             if(array[i,j] < minElem)
+//                 {
+//                     minElem = array[i,j];
+//                     minElemIndexRow = i;
+//                     minElemIndexCol = j;
+//                 }  
+//         } 
+//     }
+//         Console.WriteLine(minElem); 
+//         Console.WriteLine("Индекс минимального элемента " + minElemIndexRow +", " + minElemIndexCol);
+// for(int i = 0; i<array.GetLength(0); i++)
+//     {
+//         if(i == minElemIndexRow)
+//         {
+//             continue;  
+//         }
+//     for(int j = 0; j<array.GetLength(1); j++)
+//         {
+//             if(j == minElemIndexCol)
+//                 {
+//                  continue;   
+//                 }  
+//                 Console.Write(array[i,j] + " ");
+//         } 
+//         Console.WriteLine();
+//     }  
+// }
+// createArray();
+// printArray();
+// indexMinElem();
 
 int[,] array = new int[3,3];
 void createArray()
@@ -195,6 +256,7 @@ for(int i = 0; i<array.GetLength(0); i++)
 }
 void printArray()
 {
+Console.WriteLine("Изначальный массив");
 for(int i = 0; i<array.GetLength(0); i++)
     {
     for(int j = 0; j<array.GetLength(1); j++)
@@ -203,7 +265,6 @@ for(int i = 0; i<array.GetLength(0); i++)
         }
         Console.WriteLine();
     }
-    Console.WriteLine();
 }
 void indexMinElem()
 {
@@ -222,28 +283,36 @@ void indexMinElem()
                 }  
         } 
     }
-        Console.WriteLine(minElem); 
+        Console.WriteLine("Минимальный элемент массива равен: " + minElem); 
         Console.WriteLine("Индекс минимального элемента " + minElemIndexRow +", " + minElemIndexCol);
-for(int i = 0; i<array.GetLength(0); i++)
+Console.WriteLine("Новый массив");
+int[,] array1 = new int[array.GetLength(0) - 1, array.GetLength(1) - 1];
+for(int i = 0; i<array.GetLength(0);i++)
     {
         if(i == minElemIndexRow)
         {
-            continue;  
+            i = i + 1;  
         }
-    for(int j = 0; j<array.GetLength(1); j++)
+    for(int k = 0; k<array1.GetLength(0);k++)
         {
-            if(j == minElemIndexCol)
+             for(int j = 0; j<array.GetLength(0);j++)
+             {
+                if(j == minElemIndexCol)
                 {
-                 continue;   
-                }  
-                Console.Write(array[i,j] + " ");
-        } 
-        Console.WriteLine();
+                    j = j + 1;
+                }
+                for(int n = 0; n<array1.GetLength(0);n++)
+                {
+                    array1[k,n] = array[i,j];
+                    Console.Write(array1[k,n] + " ");
+                    j = j + 1;
+                }
+             }
+             i = i + 1;
+              Console.WriteLine();
+        }
     }  
 }
-
-
-
 createArray();
 printArray();
 indexMinElem();
