@@ -205,7 +205,7 @@ for(int i = 0; i<array.GetLength(0); i++)
     }
     Console.WriteLine();
 }
-void delRowdelCol()
+void indexMinElem()
 {
     int minElem = int.MaxValue;
     int minElemIndexRow = -1;
@@ -224,16 +224,26 @@ void delRowdelCol()
     }
         Console.WriteLine(minElem); 
         Console.WriteLine("Индекс минимального элемента " + minElemIndexRow +", " + minElemIndexCol);
-int[,] delRowdelCol(int[,] array, int minElemIndexRow, int minElemIndexCol)
-{
-    throw new NotImplementedException();
+for(int i = 0; i<array.GetLength(0); i++)
+    {
+        if(i == minElemIndexRow)
+        {
+            continue;  
+        }
+    for(int j = 0; j<array.GetLength(1); j++)
+        {
+            if(j == minElemIndexCol)
+                {
+                 continue;   
+                }  
+                Console.Write(array[i,j] + " ");
+        } 
+        Console.WriteLine();
+    }  
 }
 
-    int[,] array1;
-    int[,] _ = delRowdelCol(array, minElemIndexRow, minElemIndexCol);
 
-        
-}
+
 createArray();
 printArray();
-delRowdelCol();
+indexMinElem();
