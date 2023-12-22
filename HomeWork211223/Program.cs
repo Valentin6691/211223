@@ -243,7 +243,7 @@
 // printArray();
 // indexMinElem();
 
-int[,] array = new int[3,3];
+int[,] array = new int[4,5];
 void createArray()
 {
 for(int i = 0; i<array.GetLength(0); i++)
